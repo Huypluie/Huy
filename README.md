@@ -21,18 +21,17 @@ The performance of the model is evaluated using **Quadratic Weighted Kappa (QWK)
 QWK is a statistical measure of agreement between predicted labels and ground-truth labels, adjusted for the possibility of agreement occurring by chance.  
 Unlike simple accuracy, QWK considers the **ordinal relationship** between classes, meaning that misclassifying a sample into a far-away class (e.g., predicting 0 → 4) is penalized more heavily than misclassifying into a nearby class (e.g., 2 → 3).  
 
-This makes QWK a more suitable metric for **diabetic retinopathy detection**, where the disease stages are ordered and the severity of misclassification matters.
-## Results
+This makes QWK a more suitable metric for **diabetic retinopathy detection**, where the disease stages are ordered and the severity of misclassification matters. In medical image classification, especially for ordinal label tasks such as diabetic retinopathy grading:
 
-The model was trained on the APTOS2019 dataset and evaluated using **Quadratic Weighted Kappa (QWK)**, the official competition metric.  
+- **QWK = 0.6 – 0.8** → considered **good** (substantial agreement).  
+- **QWK > 0.8** → considered **excellent**, meaning that the model achieves an agreement level comparable to expert ophthalmologists.
+## Results
 
 ### Validation Set Performance
 - **Optimized QWK:** `0.8804`  
-- **Accuracy:** `0.70`
 
 ### Test Set Performance (APTOS2019 official test split)
 - **Optimized QWK:** `0.8518`  
-- **Accuracy:** `0.69`  
 ---
 
 📌 **Observation:**  
