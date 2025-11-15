@@ -5,7 +5,7 @@ DR - blindness detection (Bệnh Võng Mạc Tiểu Đường)
 https://www.kaggle.com/competitions/aptos2019-blindness-detection/data  
 
 **Link Web Demo:**  
-https://drive.google.com/drive/folders/1gSw5u1YX_5p-TaxxFqOlBupnjzkHve_9?usp=sharing  
+[https://drive.google.com/drive/folders/1gSw5u1YX_5p-TaxxFqOlBupnjzkHve_9?usp=sharing  ](https://drive.google.com/drive/folders/1gSw5u1YX_5p-TaxxFq0IBupnjzkHve_9?usp=sharing)
 
 **Preprocess:** GaussianBlur + CLAHE, input size (299, 299)  
 
